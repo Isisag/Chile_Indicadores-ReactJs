@@ -1,7 +1,22 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import {Link} from "react-router-dom"
+import { IndicatorsContext } from '../../contexts/IndicatorsContext';
+import Cards from './Cards';
+import UserWelcome from '../commons/UserWelcome';
+
 
 const CardContainer = () => {
-  return <div> im contained a card </div>;
-};
+  const { indicator } = useContext(IndicatorsContext);
+  
+  return(
+    <>
+  <div className='home-container'>
+      <UserWelcome />
+  </div>
+      <Cards indicator={indicator} />
+      <p></p>
+    </>
+  )
+}
 
 export default CardContainer;

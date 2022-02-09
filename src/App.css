@@ -2,10 +2,17 @@
 
 *{
   font-family: 'Ubuntu', sans-serif;
+  margin: 0rem;
+  padding: 0rem;
 }
 
 :root{
   --color1: #212654;
+}
+
+
+a:visited{
+  color: #61dafb;
 }
 
 .header-bar{
@@ -27,9 +34,34 @@
   align-items: center;
 }
 
+.home-container{
+  margin-top: 5rem;
+}
 
+.user-welcome{
+  display: inline;
+  flex-direction: row;
+  text-align: center;
+  width: 100%;
+  margin: 25rem auto 1rem auto;
+}
 
+.footer-containter{
+  display: flex;
+  justify-content: center;
+  background-color: var(--color1);
+  position: absolute;
+  bottom: 0;
+  width: 200vh;
+  height: 4vh;
+  padding: 1rem;
+}
 
+.home-button{
+  padding: .5rem;
+  border: #61dafb 3px solid;
+  border-radius: 50%;
+}
 
 
 
